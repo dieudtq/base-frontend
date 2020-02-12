@@ -357,6 +357,7 @@
     border: 0;
     border-radius: 0;
     height: 34px;
+    -webkit-appearance: none;
   }
 
   .src-components-Atoms-Select-styles__root___2cSwR select:focus {
@@ -405,24 +406,50 @@
 .src-components-Pages-Home-styles__home-container___ifNqo {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
   .src-components-Pages-Home-styles__home-container___ifNqo {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .src-components-Pages-Home-styles__home-container___ifNqo {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+.src-components-Pages-Video-styles__root___2jbnS {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  margin: -2rem;
+  min-height: 100vh;
+}
+  .src-components-Pages-Video-styles__root___2jbnS .src-components-Pages-Video-styles__header___1XY_6 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .src-components-Pages-Video-styles__root___2jbnS h1 {
+    color: #ffffff;
+    font-family: Helvetica;
+    font-size: 35px;
+    font-weight: 400;
+    letter-spacing: -0.84px;
+    line-height: 42px;
+    opacity: 0.75;
+    text-align: left;
+  }
+  .src-components-Pages-Video-styles__root___2jbnS video {
+    height: 70%;
+  }
 
 .src-components-Molecules-SearchCard-styles__root___2yXQQ {
   width: 100%;
   font-family: Helvetica;
   display: flex;
   flex-direction: column;
+  max-width: 768px;
 }
 .src-components-Molecules-SearchCard-styles__root___2yXQQ .src-components-Molecules-SearchCard-styles__thumb___13yXW {
     display: flex;
@@ -564,7 +591,7 @@
     border: 1px solid #ceced2;
     border-radius: 3px;
     font-size: 20px;
-    width: 100%;
+    width: calc(100% - 40px);
     height: 35px;
     padding: 10px 20px;
     opacity: 0.7;
@@ -578,12 +605,12 @@
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
   .src-components-Pages-Search-styles__search-container___2OIDX {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .src-components-Pages-Search-styles__search-container___2OIDX {
     grid-template-columns: repeat(1, 1fr);
   }
