@@ -30,7 +30,8 @@ store.subscribe(
       localStorage.setItem('state', serializedState)
     } catch (err) {
       // Hanle errors
-      // console.warn('Cannot log store to localstore', err)
+      // eslint-disable-next-line no-console
+      console.warn('Cannot log store to localstore', err)
     }
   }),
 )

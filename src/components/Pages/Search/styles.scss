@@ -9,7 +9,7 @@
     border: 1px solid #ceced2;
     border-radius: 3px;
     font-size: 20px;
-    width: 100%;
+    width: calc(100% - 40px);
     height: 35px;
     padding: 10px 20px;
     opacity: 0.7;
@@ -27,12 +27,12 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
   .search-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .search-container {
     grid-template-columns: repeat(1, 1fr);
   }

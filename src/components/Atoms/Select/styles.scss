@@ -22,9 +22,12 @@
     border: 0;
     border-radius: 0;
     height: 34px;
+    -webkit-appearance: none;
+
     &:focus {
       outline: none;
     }
+
     &:focus ~ label {
       top: 7px;
       font-size: 12px;
@@ -36,6 +39,7 @@
       font-weight: 400;
     }
   }
+  
   label {
     position: absolute;
     color: #000000;
