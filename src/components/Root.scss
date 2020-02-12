@@ -1,0 +1,17 @@
+@import 'utils/scss/colors.scss';
+@import 'utils/scss/reset.scss';
+
+.root {
+  align-items: center;
+  min-height: 100vh;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.11px;
+  line-height: 17px;
+  padding: 2rem;
+
+  a {
+    text-decoration: none;
+  }
+}

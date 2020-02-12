@@ -1,0 +1,75 @@
+@import 'utils/scss/effects.scss';
+@import 'utils/scss/colors.scss';
+
+.root {
+  position: relative;
+  display: inline-flex;
+  padding: 8px 13px;
+  text-align: center;
+  border: 1px solid #ceced2;
+  border-radius: 3px;
+  background-color: $color_white;
+  color: $color_black;
+  font-size: 14px;
+  font-weight: 400;
+  outline: none;
+  overflow: hidden;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: $color_white;
+    visibility: hidden;
+    z-index: 2;
+  }
+
+  &:not(:active):before {
+    animation: ripple 0.4s cubic-bezier(0, 0, 0.2, 1);
+    transition: visibility 0.4s step-end;
+  }
+
+  &:active:before {
+    visibility: visible;
+  }
+
+  svg {
+    &:not(:only-child) {
+      margin-right: 5px;
+    }
+
+    g {
+      fill: $color_black;
+    }
+  }
+
+  span {
+    flex-grow: 1;
+  }
+}
+
+[data-theme='primary'] {
+  background-color: $color_primary;
+  color: $color_white;
+  opacity: 1;
+
+  svg g {
+    fill: $color_white;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,31 @@
+@import 'utils/scss/colors.scss';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  h1 {
+    font-family: Helvetica;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+    color: $color_grey_light;
+  }
+}
+.home-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .home-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

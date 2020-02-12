@@ -1,0 +1,11 @@
+{
+  // Config to use static path to import
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "src/*"
+      ]
+    }
+  }
+}
