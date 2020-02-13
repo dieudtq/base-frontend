@@ -24,7 +24,7 @@ module.exports = {
   output: {
     path: buildPath,
     filename: '[name].[hash].js',
-    publicPath: '/',
+    publicPath: '/base-frontend',
   },
   module: {
     rules: [
