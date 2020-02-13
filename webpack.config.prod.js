@@ -15,14 +15,13 @@ const WorkboxPlugin = require('workbox-webpack-plugin')
 const rootDir = path.resolve(process.cwd())
 const srcPath = path.resolve(rootDir, 'src')
 const assetsPath = path.resolve(rootDir, 'assets')
-const buildPath = path.resolve(rootDir, 'dist')
 
 module.exports = {
   entry: {
     app: `${srcPath}/app.js`,
   },
   output: {
-    path: buildPath,
+    path: path.resolve(__dirname, 'dist'),
     filename: '[name].[hash].js',
     publicPath: '/base-frontend',
   },
