@@ -18,7 +18,7 @@ import styles from './Root.scss'
 const cssModules = cssModuleNameTag(styles)
 
 export default memo(() => (
-  <Router>
+  <Router basename="base-frontend/">
     <div className={cssModules`root`}>
       <Route exact path="/" component={Home} />
       <Route path="/video" component={Video} />
