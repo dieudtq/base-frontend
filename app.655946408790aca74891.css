@@ -1,0 +1,679 @@
+@-webkit-keyframes src-components-Atoms-Button-Styles__ripple___33_0R {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0.5;
+  }
+
+  100% {
+    width: 130%;
+    height: 500%;
+    opacity: 0;
+  }
+}
+
+@keyframes src-components-Atoms-Button-Styles__ripple___33_0R {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0.5;
+  }
+
+  100% {
+    width: 130%;
+    height: 500%;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes src-components-Atoms-Button-Styles__loadding-animation___29uYx {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes src-components-Atoms-Button-Styles__loadding-animation___29uYx {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@mixin noselection {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+  supported by Chrome, Opera and Firefox */
+}
+
+.src-components-Atoms-Button-Styles__root___1nR6_ {
+  position: relative;
+  display: inline-flex;
+  padding: 8px 13px;
+  text-align: center;
+  border: 1px solid #ceced2;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  outline: none;
+  overflow: hidden;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.src-components-Atoms-Button-Styles__root___1nR6_:hover {
+    opacity: 1;
+  }
+
+.src-components-Atoms-Button-Styles__root___1nR6_:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    visibility: hidden;
+    z-index: 2;
+  }
+
+.src-components-Atoms-Button-Styles__root___1nR6_:not(:active):before {
+    -webkit-animation: src-components-Atoms-Button-Styles__ripple___33_0R 0.4s cubic-bezier(0, 0, 0.2, 1);
+            animation: src-components-Atoms-Button-Styles__ripple___33_0R 0.4s cubic-bezier(0, 0, 0.2, 1);
+    transition: visibility 0.4s step-end;
+  }
+
+.src-components-Atoms-Button-Styles__root___1nR6_:active:before {
+    visibility: visible;
+  }
+
+.src-components-Atoms-Button-Styles__root___1nR6_ svg:not(:only-child) {
+      margin-right: 5px;
+    }
+
+.src-components-Atoms-Button-Styles__root___1nR6_ svg g {
+      fill: #000000;
+    }
+
+.src-components-Atoms-Button-Styles__root___1nR6_ span {
+    flex-grow: 1;
+  }
+
+[data-theme='primary'] {
+  background-color: #784CC0;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+[data-theme='primary'] svg g {
+    fill: #FFFFFF;
+  }
+
+[data-theme='primary']:hover {
+    opacity: 0.8;
+  }
+
+.src-components-Molecules-VideoItem-styles__root___2MatT {
+  width: 100%;
+  font-family: Helvetica;
+  display: flex;
+  flex-direction: column;
+}
+.src-components-Molecules-VideoItem-styles__root___2MatT .src-components-Molecules-VideoItem-styles__thumb___2YiNg {
+    display: flex;
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 50% 0 0 0;
+    background-color: black;
+    box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.7);
+  }
+.src-components-Molecules-VideoItem-styles__root___2MatT .src-components-Molecules-VideoItem-styles__thumb___2YiNg:hover {
+      cursor: pointer;
+      box-shadow: 0 40px 20px -20px rgba(0, 0, 0, 0.7);
+    }
+.src-components-Molecules-VideoItem-styles__root___2MatT .src-components-Molecules-VideoItem-styles__thumb___2YiNg:hover .src-components-Molecules-VideoItem-styles__play___38CgQ {
+        transform: scale(1.2);
+        transition: transform 0.2s;
+      }
+.src-components-Molecules-VideoItem-styles__root___2MatT .src-components-Molecules-VideoItem-styles__thumb___2YiNg img {
+      display: block;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+.src-components-Molecules-VideoItem-styles__root___2MatT .src-components-Molecules-VideoItem-styles__thumb___2YiNg .src-components-Molecules-VideoItem-styles__play___38CgQ {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+      width: 45px;
+      height: 45px;
+      top: calc(50% - 22px);
+      left: calc(50% - 22px);
+      border-radius: 999px;
+      transition: all 0.25s ease;
+    }
+.src-components-Molecules-VideoItem-styles__root___2MatT .src-components-Molecules-VideoItem-styles__thumb___2YiNg .src-components-Molecules-VideoItem-styles__play___38CgQ svg {
+        height: 24px;
+      }
+.src-components-Molecules-VideoItem-styles__root___2MatT .src-components-Molecules-VideoItem-styles__sub___3AtAj {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    color: #6e6e6e;
+  }
+.src-components-Molecules-VideoItem-styles__root___2MatT .src-components-Molecules-VideoItem-styles__desc___2W8gd h1 {
+    line-height: 30px;
+  }
+.src-components-Molecules-VideoItem-styles__root___2MatT .src-components-Molecules-VideoItem-styles__footer___8glpS {
+    display: flex;
+    margin-top: auto;
+    padding-top: 10px;
+  }
+.src-components-Molecules-VideoItem-styles__root___2MatT .src-components-Molecules-VideoItem-styles__footer___8glpS button:not(:last-child) {
+        margin-right: 20px;
+      }
+
+.src-components-Atoms-Input-styles__root___1sRJv {
+  position: relative;
+  margin-bottom: 25px;
+}
+  .src-components-Atoms-Input-styles__root___1sRJv input {
+    border: 1px solid #ceced2;
+    border-radius: 3px;
+    height: 56px;
+    color: #000000;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.13px;
+    line-height: 19px;
+    opacity: 0.8;
+    text-align: left;
+    padding-top: 26px;
+    transition: all 0.25s ease;
+    width: calc(100% - 18px);
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: none;
+  }
+  .src-components-Atoms-Input-styles__root___1sRJv label {
+    position: absolute;
+    color: #000000;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.13px;
+    line-height: 19px;
+    opacity: 0.3;
+    text-align: left;
+    top: 19px;
+    left: 9px;
+    transition: 0.25s ease all;
+  }
+  .src-components-Atoms-Input-styles__root___1sRJv:hover input {
+      box-shadow: 0 1px 5px 0 rgba(57, 24, 245, 0.9);
+    }
+  .src-components-Atoms-Input-styles__root___1sRJv:focus ~ label {
+    top: 7px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .src-components-Atoms-Input-styles__root___1sRJv:valid ~ label {
+    top: 7px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+.src-components-Atoms-TextArea-styles__root___2mK6p {
+  position: relative;
+  margin-bottom: 25px;
+}
+  .src-components-Atoms-TextArea-styles__root___2mK6p textarea {
+    border: 1px solid #ceced2;
+    border-radius: 3px;
+    height: 56px;
+    color: #000000;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.13px;
+    line-height: 19px;
+    opacity: 0.8;
+    text-align: left;
+    padding-top: 45px;
+    transition: all 0.25s ease;
+    width: calc(100% - 18px);
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: none;
+  }
+  .src-components-Atoms-TextArea-styles__root___2mK6p label {
+    position: absolute;
+    color: #000000;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.13px;
+    line-height: 19px;
+    opacity: 0.3;
+    text-align: left;
+    top: 19px;
+    left: 9px;
+    transition: 0.25s ease all;
+  }
+  .src-components-Atoms-TextArea-styles__root___2mK6p:hover input {
+      box-shadow: 0 1px 5px 0 rgba(57, 24, 245, 0.9);
+    }
+  .src-components-Atoms-TextArea-styles__root___2mK6p:focus ~ label {
+    top: 7px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .src-components-Atoms-TextArea-styles__root___2mK6p:valid ~ label {
+    top: 7px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+.src-components-Molecules-Modal-styles__root___KQcId {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #00000078;
+  z-index: 5;
+  overflow-y: scroll;
+
+}
+.src-components-Molecules-Modal-styles__root___KQcId .src-components-Molecules-Modal-styles__modal-box___3YIZo {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 16px 21px;
+    border: 1px solid #6e6e6e;
+    width: 80%;
+    min-height: 200px;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+  }
+.src-components-Molecules-Modal-styles__root___KQcId .src-components-Molecules-Modal-styles__close___3HP16 {
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    z-index: 5;
+    background-color: #fefefe;
+  }
+.src-components-Molecules-Modal-styles__root___KQcId.src-components-Molecules-Modal-styles__open___1HAjC {
+    display: flex;
+  }
+
+.src-components-Atoms-Select-styles__root___2cSwR {
+  margin-bottom: 30px;
+  position: relative;
+  border: 1px solid #ceced2;
+  border-radius: 3px;
+  height: 56px;
+}
+
+  .src-components-Atoms-Select-styles__root___2cSwR select {
+    width: 97%;
+    color: #000000;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.13px;
+    line-height: 19px;
+    opacity: 0.8;
+    position: absolute;
+    top: 26px;
+    left: 9px;
+    transition: 0.25s ease all;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    height: 34px;
+    -webkit-appearance: none;
+  }
+
+  .src-components-Atoms-Select-styles__root___2cSwR select:focus {
+      outline: none;
+    }
+
+  .src-components-Atoms-Select-styles__root___2cSwR select:focus ~ label {
+      top: 7px;
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+  .src-components-Atoms-Select-styles__root___2cSwR select:valid ~ label {
+      top: 7px;
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+  .src-components-Atoms-Select-styles__root___2cSwR label {
+    position: absolute;
+    color: #000000;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.13px;
+    line-height: 19px;
+    opacity: 0.3;
+    text-align: left;
+    top: 19px;
+    left: 9px;
+    transition: 0.25s ease all;
+  }
+
+.src-components-Pages-Home-styles__header___1XUgp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.src-components-Pages-Home-styles__header___1XUgp h1 {
+    font-family: Helvetica;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+    color: #c1c1c1;
+  }
+.src-components-Pages-Home-styles__home-container___ifNqo {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 1080px) {
+  .src-components-Pages-Home-styles__home-container___ifNqo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .src-components-Pages-Home-styles__home-container___ifNqo {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.src-components-Pages-Video-styles__root___2jbnS {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  margin: -2rem;
+  min-height: 100vh;
+}
+  .src-components-Pages-Video-styles__root___2jbnS .src-components-Pages-Video-styles__header___1XY_6 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .src-components-Pages-Video-styles__root___2jbnS h1 {
+    color: #ffffff;
+    font-family: Helvetica;
+    font-size: 35px;
+    font-weight: 400;
+    letter-spacing: -0.84px;
+    line-height: 42px;
+    opacity: 0.75;
+    text-align: left;
+  }
+  .src-components-Pages-Video-styles__root___2jbnS video {
+    height: 70%;
+  }
+
+.src-components-Molecules-SearchCard-styles__root___2yXQQ {
+  width: 100%;
+  font-family: Helvetica;
+  display: flex;
+  flex-direction: column;
+  max-width: 768px;
+}
+.src-components-Molecules-SearchCard-styles__root___2yXQQ .src-components-Molecules-SearchCard-styles__thumb___13yXW {
+    display: flex;
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 50% 0 0 0;
+    background-color: black;
+    box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.7);
+  }
+.src-components-Molecules-SearchCard-styles__root___2yXQQ .src-components-Molecules-SearchCard-styles__thumb___13yXW:hover {
+      cursor: pointer;
+      box-shadow: 0 40px 20px -20px rgba(0, 0, 0, 0.7);
+    }
+.src-components-Molecules-SearchCard-styles__root___2yXQQ .src-components-Molecules-SearchCard-styles__thumb___13yXW:hover .src-components-Molecules-SearchCard-styles__play___3Bdqr {
+        transform: scale(1.2);
+        transition: transform 0.2s;
+      }
+.src-components-Molecules-SearchCard-styles__root___2yXQQ .src-components-Molecules-SearchCard-styles__thumb___13yXW img {
+      display: block;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+.src-components-Molecules-SearchCard-styles__root___2yXQQ .src-components-Molecules-SearchCard-styles__thumb___13yXW .src-components-Molecules-SearchCard-styles__play___3Bdqr {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+      width: 45px;
+      height: 45px;
+      top: calc(50% - 22px);
+      left: calc(50% - 22px);
+      border-radius: 999px;
+      transition: all 0.25s ease;
+    }
+.src-components-Molecules-SearchCard-styles__root___2yXQQ .src-components-Molecules-SearchCard-styles__thumb___13yXW .src-components-Molecules-SearchCard-styles__play___3Bdqr svg {
+        height: 24px;
+      }
+.src-components-Molecules-SearchCard-styles__root___2yXQQ .src-components-Molecules-SearchCard-styles__sub___2QdJU {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    color: #6e6e6e;
+  }
+.src-components-Molecules-SearchCard-styles__root___2yXQQ .src-components-Molecules-SearchCard-styles__desc___1MQvl h1 {
+    line-height: 30px;
+  }
+.src-components-Molecules-SearchCard-styles__root___2yXQQ .src-components-Molecules-SearchCard-styles__footer___3gpEH {
+    margin-top: auto;
+    padding-top: 10px;
+  }
+.src-components-Molecules-SearchCard-styles__root___2yXQQ .src-components-Molecules-SearchCard-styles__footer___3gpEH button {
+      width: 100%;
+    }
+
+@-webkit-keyframes src-components-Atoms-Loadding-Styles__ripple___2-CH7 {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0.5;
+  }
+
+  100% {
+    width: 130%;
+    height: 500%;
+    opacity: 0;
+  }
+}
+
+@keyframes src-components-Atoms-Loadding-Styles__ripple___2-CH7 {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0.5;
+  }
+
+  100% {
+    width: 130%;
+    height: 500%;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes src-components-Atoms-Loadding-Styles__loadding-animation___MjlW1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes src-components-Atoms-Loadding-Styles__loadding-animation___MjlW1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@mixin noselection {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+  supported by Chrome, Opera and Firefox */
+}
+
+.src-components-Atoms-Loadding-Styles__loadding___1VhCG {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  margin-left: 25px;
+  margin-top: 25px;
+  border: 5px solid #ddd;
+  border-left: 5px solid #784CC0;
+  border-radius: 50%;
+  -webkit-animation: src-components-Atoms-Loadding-Styles__loadding-animation___MjlW1 1.2s linear infinite;
+          animation: src-components-Atoms-Loadding-Styles__loadding-animation___MjlW1 1.2s linear infinite;
+}
+
+.src-components-Pages-Search-styles__header___2XJpU {
+  font-family: Helvetica;
+  color: #6e6e6e;
+  margin-bottom: 20px;
+}
+.src-components-Pages-Search-styles__header___2XJpU input {
+    border: 1px solid #ceced2;
+    border-radius: 3px;
+    font-size: 20px;
+    width: calc(100% - 40px);
+    height: 35px;
+    padding: 10px 20px;
+    opacity: 0.7;
+    margin-bottom: 20px;
+  }
+.src-components-Pages-Search-styles__header___2XJpU svg {
+    margin-right: 5px;
+  }
+.src-components-Pages-Search-styles__search-container___2OIDX {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+@media (max-width: 1080px) {
+  .src-components-Pages-Search-styles__search-container___2OIDX {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .src-components-Pages-Search-styles__search-container___2OIDX {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.src-components-Root__root___1Sp37 {
+  align-items: center;
+  min-height: 100vh;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.11px;
+  line-height: 17px;
+  padding: 2rem;
+}
+.src-components-Root__root___1Sp37 a {
+    text-decoration: none;
+  }
+
