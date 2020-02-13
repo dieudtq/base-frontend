@@ -15,7 +15,7 @@ const WorkboxPlugin = require('workbox-webpack-plugin')
 const rootDir = path.resolve(process.cwd())
 const srcPath = path.resolve(rootDir, 'src')
 const assetsPath = path.resolve(rootDir, 'assets')
-const buildPath = path.resolve(rootDir, 'build')
+const buildPath = path.resolve(rootDir, 'dist')
 
 module.exports = {
   entry: {

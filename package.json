@@ -11,9 +11,9 @@
   ],
   "scripts": {
     "dev": "webpack-dev-server --open watch --config ./webpack.config.dev.js",
-    "start": "npm run build && http-server ./build",
+    "start": "npm run build && http-server dist",
     "build": "npm run clean && webpack --mode production --config ./webpack.config.prod.js",
-    "deploy": "npm run build && gh-pages -d ./build",
+    "deploy": "npm run build && gh-pages -d dist",
     "eslint": "./node_modules/.bin/eslint --ext .js,.jsx src",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
