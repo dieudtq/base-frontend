@@ -63,7 +63,7 @@
   },
   "dependencies": {
     "@storybook/react": "^5.3.13",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "common-tags": "^1.8.0",
     "immutable": "^4.0.0-rc.12",
     "lodash": "^4.17.15",
